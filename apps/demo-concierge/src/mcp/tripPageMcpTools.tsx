@@ -1,6 +1,6 @@
 'use client';
 
-import { McpReduxTools, type McpReduxToolDef } from '@webmcp-kit/redux';
+import { McpReduxTools, type McpReduxToolDef } from '@react-webmcp-kit/redux';
 import { useMemo } from 'react';
 import { useAppSelector } from '@/store/hooks';
 import { z } from 'zod';

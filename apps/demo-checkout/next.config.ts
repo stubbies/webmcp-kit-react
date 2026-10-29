@@ -8,9 +8,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const nextConfig: NextConfig = {
   outputFileTracingRoot: path.join(__dirname, '../..'),
   transpilePackages: [
-    '@webmcp-kit/react',
-    '@webmcp-kit/react-hook-form',
-    '@webmcp-kit/zustand',
+    '@react-webmcp-kit/core',
+    '@react-webmcp-kit/react-hook-form',
+    '@react-webmcp-kit/zustand',
     'use-webmcp-tool',
   ],
 };

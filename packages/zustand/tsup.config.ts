@@ -6,6 +6,6 @@ export default defineConfig({
   dts: true,
   sourcemap: true,
   clean: true,
-  external: ['react', 'zustand', '@webmcp-kit/react', 'zod'],
+  external: ['react', 'zustand', '@react-webmcp-kit/core', 'zod'],
   banner: { js: "'use client';" },
 });

@@ -1,7 +1,7 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { McpFormTools, useMcpSubmitTool } from '@webmcp-kit/react-hook-form';
+import { McpFormTools, useMcpSubmitTool } from '@react-webmcp-kit/react-hook-form';
 import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { useAppDispatch } from '@/store/hooks';

@@ -1,6 +1,6 @@
 'use client';
 
-import { McpStoreTools } from '@webmcp-kit/zustand';
+import { McpStoreTools } from '@react-webmcp-kit/zustand';
 import { z } from 'zod';
 import { useMemo } from 'react';
 import { useCartStore } from '@/store/cartStore';

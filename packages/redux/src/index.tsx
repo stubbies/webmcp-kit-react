@@ -1,5 +1,5 @@
 import type { Dispatch } from '@reduxjs/toolkit';
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 import { useDispatch, useStore } from 'react-redux';
 import { formatRtkQueryResult } from './formatRtkQueryResult';
 import type { McpReduxToolDef, McpRtkQueryToolDef, ReduxToolContext } from './types';

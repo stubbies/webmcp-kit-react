@@ -1,22 +1,40 @@
 {
-  "name": "@webmcp-kit/react",
+  "name": "@react-webmcp-kit/core",
   "version": "0.1.0",
   "description": "React hooks and provider for WebMCP tool registration",
+  "license": "MIT",
   "type": "module",
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "bugs": {
+    "url": "https://github.com/stubbies/webmcp-kit-react/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
     "react": ">=18",

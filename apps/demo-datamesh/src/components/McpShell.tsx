@@ -1,6 +1,6 @@
 'use client';
 
-import { McpDevTools, McpProvider, installWebMcpPolyfill } from '@webmcp-kit/react';
+import { McpDevTools, McpProvider, installWebMcpPolyfill } from '@react-webmcp-kit/core';
 import { useEffect, type ReactNode } from 'react';
 
 let polyfillInstalled = false;

@@ -1,6 +1,6 @@
 'use client';
 
-import { McpServerActionTools } from '@webmcp-kit/next';
+import { McpServerActionTools } from '@react-webmcp-kit/next';
 import { exportFilteredLedger } from '@/app/actions';
 import { exportLedgerSchema, ledgerWindowSchema } from '@/lib/schemas';
 import { useLedgerWindow } from '../LedgerWindowContext';

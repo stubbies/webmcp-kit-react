@@ -2,7 +2,7 @@ import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { useForm } from 'react-hook-form';
 import { useWebMCP } from 'use-webmcp-tool';
-import { McpProvider } from '@webmcp-kit/react';
+import { McpProvider } from '@react-webmcp-kit/core';
 import { McpFormTools } from './index.tsx';
 
 type FormValues = { email: string };

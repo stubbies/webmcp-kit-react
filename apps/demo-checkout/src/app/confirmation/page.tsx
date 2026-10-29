@@ -1,6 +1,6 @@
 'use client';
 
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 import Link from 'next/link';
 import { z } from 'zod';
 import { StepNav } from '@/components/StepNav';

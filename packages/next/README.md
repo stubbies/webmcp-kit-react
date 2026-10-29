@@ -1,11 +1,11 @@
-# @webmcp-kit/next
+# @react-webmcp-kit/next
 
 WebMCP tools for **Next.js Server Actions** and **high-capacity client-side table filtering**.
 
 ## Install
 
 ```bash
-pnpm add @webmcp-kit/next @webmcp-kit/react use-webmcp-tool zod
+pnpm add @react-webmcp-kit/next @react-webmcp-kit/core use-webmcp-tool zod
 ```
 
 Server Actions stay in your app (`'use server'`). This package forwards agent tool calls to those functions from client components inside `McpProvider`.
@@ -15,7 +15,7 @@ Server Actions stay in your app (`'use server'`). This package forwards agent to
 ```tsx
 'use client';
 
-import { McpServerActionTools } from '@webmcp-kit/next';
+import { McpServerActionTools } from '@react-webmcp-kit/next';
 import { z } from 'zod';
 import { loadLedgerWindow } from '@/app/actions';
 

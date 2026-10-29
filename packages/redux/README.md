@@ -1,14 +1,14 @@
-# @webmcp-kit/redux
+# @react-webmcp-kit/redux
 
 WebMCP tools for **Redux Toolkit** slice actions and **RTK Query** endpoints.
 
 ## Install
 
 ```bash
-pnpm add @webmcp-kit/redux @webmcp-kit/react use-webmcp-tool zod react-redux @reduxjs/toolkit
+pnpm add @react-webmcp-kit/redux @react-webmcp-kit/core use-webmcp-tool zod react-redux @reduxjs/toolkit
 ```
 
-Wrap your app with Redux `Provider`, then `@webmcp-kit/react`'s `McpProvider`.
+Wrap your app with Redux `Provider`, then `@react-webmcp-kit/core`'s `McpProvider`.
 
 ## Slice / thunk tools
 
@@ -17,7 +17,7 @@ Hoist tool defs and Zod schemas at module scope (avoid new objects each render).
 ```tsx
 'use client';
 
-import { McpReduxTools } from '@webmcp-kit/redux';
+import { McpReduxTools } from '@react-webmcp-kit/redux';
 import { cartSlice, selectCart } from './cartSlice';
 
 const addToCartSchema = z.object({ productId: z.string(), qty: z.number().int().min(1) });

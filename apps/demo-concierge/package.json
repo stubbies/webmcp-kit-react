@@ -12,9 +12,9 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@reduxjs/toolkit": "^2.5.0",
-    "@webmcp-kit/react": "workspace:*",
-    "@webmcp-kit/react-hook-form": "workspace:*",
-    "@webmcp-kit/redux": "workspace:*",
+    "@react-webmcp-kit/core": "workspace:*",
+    "@react-webmcp-kit/react-hook-form": "workspace:*",
+    "@react-webmcp-kit/redux": "workspace:*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

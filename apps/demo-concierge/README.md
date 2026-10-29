@@ -35,6 +35,12 @@ Open [http://localhost:3001](http://localhost:3001). Enable WebMCP testing in Ch
 
 ## Stack
 
-- Redux Toolkit + RTK Query (`@webmcp-kit/redux`) for trip state and mock inventory
-- React Hook Form (`@webmcp-kit/react-hook-form`) on search
-- `@webmcp-kit/react` — `McpProvider`, `McpDevTools`, polyfill
+- Redux Toolkit + RTK Query (`@react-webmcp-kit/redux`) for trip state and mock inventory
+- React Hook Form (`@react-webmcp-kit/react-hook-form`) on search
+- `@react-webmcp-kit/core` — `McpProvider`, `McpDevTools`, polyfill
+
+## Deploy (Vercel)
+
+1. Import this monorepo into Vercel.
+2. Set **Root Directory** to `apps/demo-concierge`.
+3. Deploy — [`vercel.json`](./vercel.json) installs from the repo root and builds the kit packages before `next build`.

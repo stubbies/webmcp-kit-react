@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm --filter @react-webmcp-kit/core --filter @react-webmcp-kit/react-hook-form --filter @react-webmcp-kit/redux run build && pnpm --filter demo-concierge build"
+}

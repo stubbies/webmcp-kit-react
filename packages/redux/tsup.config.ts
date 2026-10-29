@@ -10,7 +10,7 @@ export default defineConfig({
     'react',
     'react-redux',
     '@reduxjs/toolkit',
-    '@webmcp-kit/react',
+    '@react-webmcp-kit/core',
     'zod',
   ],
   banner: { js: "'use client';" },

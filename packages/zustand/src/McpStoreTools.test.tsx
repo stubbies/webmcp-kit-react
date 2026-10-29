@@ -2,7 +2,7 @@ import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 import { useWebMCP } from 'use-webmcp-tool';
-import { McpProvider } from '@webmcp-kit/react';
+import { McpProvider } from '@react-webmcp-kit/core';
 import { McpStoreTools } from './index.tsx';
 
 const pingTool = {

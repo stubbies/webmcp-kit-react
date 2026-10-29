@@ -1,6 +1,6 @@
 import type { FieldPath, FieldValues, UseFormReturn } from 'react-hook-form';
 import { z } from 'zod';
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 
 export type McpFormFieldDef<T extends FieldValues> = {
   name: FieldPath<T>;

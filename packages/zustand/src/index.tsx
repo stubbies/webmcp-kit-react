@@ -1,5 +1,5 @@
 import type { z } from 'zod';
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 
 export type McpStoreToolDef<TArgs = unknown, TResult = unknown> = {
   name: string;

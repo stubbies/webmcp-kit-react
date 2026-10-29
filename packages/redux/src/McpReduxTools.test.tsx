@@ -2,7 +2,7 @@ import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest';
 import { z } from 'zod';
 import { useWebMCP } from 'use-webmcp-tool';
-import { McpProvider } from '@webmcp-kit/react';
+import { McpProvider } from '@react-webmcp-kit/core';
 import { McpReduxTools } from './index.tsx';
 
 const dispatch = vi.fn();

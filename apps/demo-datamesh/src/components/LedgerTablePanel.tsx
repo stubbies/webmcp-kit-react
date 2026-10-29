@@ -4,7 +4,7 @@ import {
   applyTableFilters,
   McpTableFilterTools,
   useTableFilterState,
-} from '@webmcp-kit/next';
+} from '@react-webmcp-kit/next';
 import { useMemo } from 'react';
 import { LEDGER_COLUMNS } from '@/lib/ledgerColumns';
 import type { LedgerRow } from '@/lib/types';

@@ -1,4 +1,4 @@
-import type { TableColumnDef } from '@webmcp-kit/next';
+import type { TableColumnDef } from '@react-webmcp-kit/next';
 import type { LedgerRow } from './types';
 
 export const LEDGER_COLUMNS: TableColumnDef<LedgerRow>[] = [

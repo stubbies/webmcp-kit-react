@@ -1,6 +1,6 @@
 'use client';
 
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 import { z } from 'zod';
 import type { TableColumnDef, TableFilterStateApi } from './types';
 

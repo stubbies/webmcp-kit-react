@@ -1,4 +1,4 @@
-import { useMcpTool } from '@webmcp-kit/react';
+import { useMcpTool } from '@react-webmcp-kit/core';
 import type { McpServerActionToolDef } from './types';
 
 function McpServerActionToolRegistrar<TArgs, TResult>({

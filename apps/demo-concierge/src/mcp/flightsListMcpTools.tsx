@@ -5,7 +5,7 @@ import {
   McpRtkQueryTools,
   type McpReduxToolDef,
   type McpRtkQueryToolDef,
-} from '@webmcp-kit/redux';
+} from '@react-webmcp-kit/redux';
 import type { UnknownAction } from '@reduxjs/toolkit';
 import { useRouter } from 'next/navigation';
 import { useMemo } from 'react';

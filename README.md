@@ -6,11 +6,11 @@ Headless React hooks and adapters that expose multi-step UI workflows to [WebMCP
 
 | Package | Description |
 |---------|-------------|
-| `@webmcp-kit/react` | `McpProvider`, `useMcpTool`, `McpDevTools`, Zod → JSON Schema |
-| `@webmcp-kit/react-hook-form` | `McpFormTools`, `useMcpSubmitTool` |
-| `@webmcp-kit/zustand` | `McpStoreTools` for store actions |
-| `@webmcp-kit/redux` | `McpReduxTools`, `McpRtkQueryTools`, `formatRtkQueryResult` |
-| `@webmcp-kit/next` | `McpServerActionTools`, `McpTableFilterTools`, `useTableFilterState`, `applyTableFilters` |
+| `@react-webmcp-kit/core` | `McpProvider`, `useMcpTool`, `McpDevTools`, Zod → JSON Schema |
+| `@react-webmcp-kit/react-hook-form` | `McpFormTools`, `useMcpSubmitTool` |
+| `@react-webmcp-kit/zustand` | `McpStoreTools` for store actions |
+| `@react-webmcp-kit/redux` | `McpReduxTools`, `McpRtkQueryTools`, `formatRtkQueryResult` |
+| `@react-webmcp-kit/next` | `McpServerActionTools`, `McpTableFilterTools`, `useTableFilterState`, `applyTableFilters` |
 
 ## Quickstart
 
@@ -18,7 +18,7 @@ Headless React hooks and adapters that expose multi-step UI workflows to [WebMCP
 'use client';
 
 import { z } from 'zod';
-import { McpProvider, useMcpTool } from '@webmcp-kit/react';
+import { McpProvider, useMcpTool } from '@react-webmcp-kit/core';
 
 function EmailField() {
   const [email, setEmail] = useState('');

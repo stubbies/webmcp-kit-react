@@ -10,8 +10,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@webmcp-kit/next": "workspace:*",
-    "@webmcp-kit/react": "workspace:*",
+    "@react-webmcp-kit/next": "workspace:*",
+    "@react-webmcp-kit/core": "workspace:*",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

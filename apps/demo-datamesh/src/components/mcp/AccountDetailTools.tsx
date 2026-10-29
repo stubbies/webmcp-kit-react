@@ -1,6 +1,6 @@
 'use client';
 
-import { McpServerActionTools } from '@webmcp-kit/next';
+import { McpServerActionTools } from '@react-webmcp-kit/next';
 import { z } from 'zod';
 import { getAccount } from '@/app/actions';
 import { ledgerWindowSchema } from '@/lib/schemas';

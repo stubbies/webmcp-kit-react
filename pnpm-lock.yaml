@@ -17,13 +17,13 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.9.1
         version: 3.10.0(react-hook-form@7.91.0(@types/react@19.3.0)(react@19.3.1))
-      '@webmcp-kit/react':
+      '@react-webmcp-kit/core':
         specifier: workspace:*
         version: link:../../packages/core
-      '@webmcp-kit/react-hook-form':
+      '@react-webmcp-kit/react-hook-form':
         specifier: workspace:*
         version: link:../../packages/rhf
-      '@webmcp-kit/zustand':
+      '@react-webmcp-kit/zustand':
         specifier: workspace:*
         version: link:../../packages/zustand
       next:
@@ -69,18 +69,18 @@ importers:
       '@hookform/resolvers':
         specifier: ^3.9.1
         version: 3.10.0(react-hook-form@7.91.0(@types/react@19.3.0)(react@19.3.1))
+      '@react-webmcp-kit/core':
+        specifier: workspace:*
+        version: link:../../packages/core
+      '@react-webmcp-kit/react-hook-form':
+        specifier: workspace:*
+        version: link:../../packages/rhf
+      '@react-webmcp-kit/redux':
+        specifier: workspace:*
+        version: link:../../packages/redux
       '@reduxjs/toolkit':
         specifier: ^2.5.0
         version: 2.13.0(react-redux@9.3.1(@types/react@19.3.0)(react@19.3.1)(redux@5.0.1))(react@19.3.1)
-      '@webmcp-kit/react':
-        specifier: workspace:*
-        version: link:../../packages/core
-      '@webmcp-kit/react-hook-form':
-        specifier: workspace:*
-        version: link:../../packages/rhf
-      '@webmcp-kit/redux':
-        specifier: workspace:*
-        version: link:../../packages/redux
       next:
         specifier: ^15.1.0
         version: 15.5.28(@types/node@22.20.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -121,12 +121,12 @@ importers:
 
   apps/demo-datamesh:
     dependencies:
-      '@webmcp-kit/next':
-        specifier: workspace:*
-        version: link:../../packages/next
-      '@webmcp-kit/react':
+      '@react-webmcp-kit/core':
         specifier: workspace:*
         version: link:../../packages/core
+      '@react-webmcp-kit/next':
+        specifier: workspace:*
+        version: link:../../packages/next
       next:
         specifier: ^15.1.0
         version: 15.5.28(@types/node@22.20.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -204,15 +204,15 @@ importers:
 
   packages/next:
     devDependencies:
+      '@react-webmcp-kit/core':
+        specifier: workspace:*
+        version: link:../core
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@types/react':
         specifier: ^19.0.0
         version: 19.3.0
-      '@webmcp-kit/react':
-        specifier: workspace:*
-        version: link:../core
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -240,6 +240,9 @@ importers:
 
   packages/redux:
     devDependencies:
+      '@react-webmcp-kit/core':
+        specifier: workspace:*
+        version: link:../core
       '@reduxjs/toolkit':
         specifier: ^2.5.0
         version: 2.13.0(react-redux@9.3.1(@types/react@19.3.0)(react@19.3.1)(redux@5.0.1))(react@19.3.1)
@@ -249,9 +252,6 @@ importers:
       '@types/react':
         specifier: ^19.0.0
         version: 19.3.0
-      '@webmcp-kit/react':
-        specifier: workspace:*
-        version: link:../core
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -282,15 +282,15 @@ importers:
 
   packages/rhf:
     devDependencies:
+      '@react-webmcp-kit/core':
+        specifier: workspace:*
+        version: link:../core
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@types/react':
         specifier: ^19.0.0
         version: 19.3.0
-      '@webmcp-kit/react':
-        specifier: workspace:*
-        version: link:../core
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0
@@ -321,15 +321,15 @@ importers:
 
   packages/zustand:
     devDependencies:
+      '@react-webmcp-kit/core':
+        specifier: workspace:*
+        version: link:../core
       '@testing-library/react':
         specifier: ^16.3.0
         version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       '@types/react':
         specifier: ^19.0.0
         version: 19.3.0
-      '@webmcp-kit/react':
-        specifier: workspace:*
-        version: link:../core
       jsdom:
         specifier: ^26.0.0
         version: 26.1.0

@@ -1,6 +1,6 @@
 'use client';
 
-import { McpReduxTools } from '@webmcp-kit/redux';
+import { McpReduxTools } from '@react-webmcp-kit/redux';
 import { z } from 'zod';
 import { selectTrip, tripActions } from '@/store/tripSlice';
 import type { AppDispatch, RootState } from '@/store/store';

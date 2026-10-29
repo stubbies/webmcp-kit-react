@@ -1,6 +1,6 @@
 # Demo 3: B2B Enterprise Financial Data-Mesh
 
-Illustrates **high-capacity client filtering hooks** on heavy ledger tables, with windows loaded through **Next.js Server Actions** (`@webmcp-kit/next`).
+Illustrates **high-capacity client filtering hooks** on heavy ledger tables, with windows loaded through **Next.js Server Actions** (`@react-webmcp-kit/next`).
 
 ## Run
 

@@ -1,5 +1,5 @@
 {
-  "name": "webmcp-kit-react",
+  "name": "react-webmcp-kit",
   "private": true,
   "scripts": {
     "build": "pnpm -r run build",
@@ -8,8 +8,10 @@
     "dev:datamesh": "pnpm --filter demo-datamesh dev",
     "test": "pnpm -r run test",
     "lint": "pnpm -r run lint",
-    "typecheck": "pnpm -r run typecheck"
+    "typecheck": "pnpm -r run typecheck",
+    "publish:packages": "pnpm -r --filter './packages/*' publish"
   },
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^5.7.2"
   },
