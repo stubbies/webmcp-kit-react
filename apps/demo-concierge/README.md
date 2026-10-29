@@ -10,7 +10,7 @@ pnpm build
 pnpm dev:concierge
 ```
 
-Open [http://localhost:3001](http://localhost:3001). Enable WebMCP testing in Chrome (`chrome://flags/#enable-webmcp-testing`) and use **MCP DevTools** (bottom-right).
+Open [http://localhost:3001](http://localhost:3001). Enable WebMCP testing in Chrome (`chrome://flags/#enable-webmcp-testing`) and use **MCP DevTools** (bottom-right). The DevTools overlay is always mounted (including production / Vercel) so you can mock-invoke tools on the live demo.
 
 ## Tools by route
 

@@ -16,7 +16,7 @@ export function McpShell({ children }: { children: ReactNode }) {
   return (
     <McpProvider>
       {children}
-      {process.env.NODE_ENV === 'development' && <McpDevTools />}
+      <McpDevTools />
     </McpProvider>
   );
 }
