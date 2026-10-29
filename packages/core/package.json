@@ -1,7 +1,7 @@
 {
   "name": "@react-webmcp-kit/core",
   "version": "0.1.0",
-  "description": "React hooks and provider for WebMCP tool registration",
+  "description": "Headless React hooks and provider for WebMCP tool registration (McpProvider, useMcpTool, McpDevTools)",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
     "directory": "packages/core"
   },
-  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "homepage": "https://github.com/stubbies/webmcp-kit-react/tree/main/packages/core#readme",
   "bugs": {
     "url": "https://github.com/stubbies/webmcp-kit-react/issues"
   },
@@ -56,5 +56,14 @@
     "use-webmcp-tool": "^0.3.0",
     "vitest": "^3.0.0",
     "webmcp-types": "^0.1.10"
-  }
+  },
+  "keywords": [
+    "webmcp",
+    "mcp",
+    "react",
+    "ai-agents",
+    "chrome",
+    "document.modelContext",
+    "zod"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "@react-webmcp-kit/zustand",
   "version": "0.1.0",
-  "description": "Zustand store action adapters for WebMCP tools",
+  "description": "Zustand store action adapters that register WebMCP tools for AI-driven client state",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
     "directory": "packages/zustand"
   },
-  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "homepage": "https://github.com/stubbies/webmcp-kit-react/tree/main/packages/zustand#readme",
   "bugs": {
     "url": "https://github.com/stubbies/webmcp-kit-react/issues"
   },
@@ -55,5 +55,13 @@
     "zod": "^3.24.1",
     "zustand": "^5.0.2",
     "webmcp-types": "^0.1.10"
-  }
+  },
+  "keywords": [
+    "webmcp",
+    "mcp",
+    "react",
+    "zustand",
+    "state",
+    "ai-agents"
+  ]
 }

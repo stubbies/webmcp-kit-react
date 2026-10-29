@@ -1,7 +1,7 @@
 {
   "name": "@react-webmcp-kit/redux",
   "version": "0.1.0",
-  "description": "Redux Toolkit and RTK Query adapters for WebMCP tools",
+  "description": "Redux Toolkit and RTK Query adapters that expose actions and endpoints as WebMCP tools",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
     "directory": "packages/redux"
   },
-  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "homepage": "https://github.com/stubbies/webmcp-kit-react/tree/main/packages/redux#readme",
   "bugs": {
     "url": "https://github.com/stubbies/webmcp-kit-react/issues"
   },
@@ -56,5 +56,13 @@
     "use-webmcp-tool": "^0.3.0",
     "vitest": "^3.0.0",
     "zod": "^3.24.1"
-  }
+  },
+  "keywords": [
+    "webmcp",
+    "mcp",
+    "react",
+    "redux",
+    "rtk-query",
+    "ai-agents"
+  ]
 }

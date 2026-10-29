@@ -1,26 +1,30 @@
 # @react-webmcp-kit/redux
 
-WebMCP tools for **Redux Toolkit** slice actions and **RTK Query** endpoints.
+**[WebMCP](https://developer.chrome.com/docs/ai/webmcp)** adapters for **Redux Toolkit** slice/thunk actions and **RTK Query** endpoints.
+
+Requires [`@react-webmcp-kit/core`](https://www.npmjs.com/package/@react-webmcp-kit/core). Render inside Redux `<Provider>` and `McpProvider`.
 
 ## Install
 
 ```bash
-pnpm add @react-webmcp-kit/redux @react-webmcp-kit/core use-webmcp-tool zod react-redux @reduxjs/toolkit
+pnpm add @react-webmcp-kit/redux @react-webmcp-kit/core @reduxjs/toolkit react-redux use-webmcp-tool zod
 ```
-
-Wrap your app with Redux `Provider`, then `@react-webmcp-kit/core`'s `McpProvider`.
 
 ## Slice / thunk tools
 
-Hoist tool defs and Zod schemas at module scope (avoid new objects each render).
+Hoist tool defs and Zod schemas at module scope.
 
 ```tsx
 'use client';
 
+import { z } from 'zod';
 import { McpReduxTools } from '@react-webmcp-kit/redux';
 import { cartSlice, selectCart } from './cartSlice';
 
-const addToCartSchema = z.object({ productId: z.string(), qty: z.number().int().min(1) });
+const addToCartSchema = z.object({
+  productId: z.string(),
+  qty: z.number().int().min(1),
+});
 
 const cartTools = [
   {
@@ -40,9 +44,11 @@ export function CartMcpTools() {
 }
 ```
 
+`execute` receives `{ dispatch, getState, signal }`.
+
 ## RTK Query tools
 
-Bind `endpoint.initiate(args)`. For one-shot agent reads, pass RTK options inside your wrapper:
+Bind `endpoint.initiate(args)`. For one-shot agent reads:
 
 ```tsx
 initiate: (args) =>
@@ -50,6 +56,9 @@ initiate: (args) =>
 ```
 
 ```tsx
+import { z } from 'zod';
+import { McpRtkQueryTools } from '@react-webmcp-kit/redux';
+
 <McpRtkQueryTools
   tools={[
     {
@@ -70,4 +79,22 @@ initiate: (args) =>
 />
 ```
 
-Query tools get `readOnlyHint: true`; mutations get `consequentialHint: true`. Results are normalized via `formatRtkQueryResult` for agent-friendly `{ success, data }` / `{ success: false, error }` payloads.
+- `kind: 'query'` → `readOnlyHint: true`
+- `kind: 'mutation'` → `consequentialHint: true`
+- Results normalized with `formatRtkQueryResult` → `{ success, data }` / `{ success: false, error }`
+
+## API
+
+| Export | Purpose |
+|--------|---------|
+| `McpReduxTools` | Dispatch-based tools |
+| `McpRtkQueryTools` | RTK Query `initiate` tools |
+| `formatRtkQueryResult` | Normalize RTK results for agents |
+
+## Demo
+
+See `apps/demo-concierge` in [webmcp-kit-react](https://github.com/stubbies/webmcp-kit-react).
+
+## License
+
+MIT

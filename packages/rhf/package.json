@@ -1,7 +1,7 @@
 {
   "name": "@react-webmcp-kit/react-hook-form",
   "version": "0.1.0",
-  "description": "React Hook Form adapters for WebMCP tools",
+  "description": "React Hook Form adapters that expose fill and submit fields as WebMCP tools for AI agents",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
     "directory": "packages/rhf"
   },
-  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "homepage": "https://github.com/stubbies/webmcp-kit-react/tree/main/packages/rhf#readme",
   "bugs": {
     "url": "https://github.com/stubbies/webmcp-kit-react/issues"
   },
@@ -54,5 +54,13 @@
     "use-webmcp-tool": "^0.3.0",
     "vitest": "^3.0.0",
     "zod": "^3.24.1"
-  }
+  },
+  "keywords": [
+    "webmcp",
+    "mcp",
+    "react",
+    "react-hook-form",
+    "forms",
+    "ai-agents"
+  ]
 }

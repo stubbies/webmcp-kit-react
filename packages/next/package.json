@@ -1,7 +1,7 @@
 {
   "name": "@react-webmcp-kit/next",
   "version": "0.1.0",
-  "description": "Next.js Server Action and client table filter adapters for WebMCP tools",
+  "description": "Next.js Server Action and high-capacity client table filter adapters for WebMCP agents",
   "license": "MIT",
   "type": "module",
   "sideEffects": false,
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/stubbies/webmcp-kit-react.git",
     "directory": "packages/next"
   },
-  "homepage": "https://github.com/stubbies/webmcp-kit-react#readme",
+  "homepage": "https://github.com/stubbies/webmcp-kit-react/tree/main/packages/next#readme",
   "bugs": {
     "url": "https://github.com/stubbies/webmcp-kit-react/issues"
   },
@@ -52,5 +52,14 @@
     "use-webmcp-tool": "^0.3.0",
     "vitest": "^3.0.0",
     "zod": "^3.24.1"
-  }
+  },
+  "keywords": [
+    "webmcp",
+    "mcp",
+    "react",
+    "nextjs",
+    "server-actions",
+    "data-table",
+    "ai-agents"
+  ]
 }
