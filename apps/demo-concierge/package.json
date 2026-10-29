@@ -1,0 +1,33 @@
+{
+  "name": "demo-concierge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@reduxjs/toolkit": "^2.5.0",
+    "@webmcp-kit/react": "workspace:*",
+    "@webmcp-kit/react-hook-form": "workspace:*",
+    "@webmcp-kit/redux": "workspace:*",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.0",
+    "react-redux": "^9.2.0",
+    "use-webmcp-tool": "^0.3.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.2",
+    "webmcp-types": "^0.1.10"
+  }
+}

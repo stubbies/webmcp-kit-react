@@ -72,6 +72,18 @@ Keep the root layout as a Server Component. Wrap the client tree with `McpProvid
 
 See [packages/redux/README.md](packages/redux/README.md).
 
-## Demo 1: Agentic checkout
+## Demos
+
+### Demo 1: Agentic checkout
 
 `apps/demo-checkout` — catalog → cart → checkout (React Hook Form + Zod) → confirmation, with Zustand cart tools and form fill tools.
+
+Run: `pnpm dev` → [http://localhost:3000](http://localhost:3000)
+
+### Demo 2: Hotel & Flight Concierge
+
+`apps/demo-concierge` — dynamic tool mounting across App Router routes (Redux/RTK Query + RHF search + intercepting booking modal).
+
+Run: `pnpm dev:concierge` → [http://localhost:3001](http://localhost:3001)
+
+See [apps/demo-concierge/README.md](apps/demo-concierge/README.md).
