@@ -10,6 +10,7 @@ Headless React hooks and adapters that expose multi-step UI workflows to [WebMCP
 | `@webmcp-kit/react-hook-form` | `McpFormTools`, `useMcpSubmitTool` |
 | `@webmcp-kit/zustand` | `McpStoreTools` for store actions |
 | `@webmcp-kit/redux` | `McpReduxTools`, `McpRtkQueryTools`, `formatRtkQueryResult` |
+| `@webmcp-kit/next` | `McpServerActionTools`, `McpTableFilterTools`, `useTableFilterState`, `applyTableFilters` |
 
 ## Quickstart
 
@@ -87,3 +88,11 @@ Run: `pnpm dev` → [http://localhost:3000](http://localhost:3000)
 Run: `pnpm dev:concierge` → [http://localhost:3001](http://localhost:3001)
 
 See [apps/demo-concierge/README.md](apps/demo-concierge/README.md).
+
+### Demo 3: B2B Financial Data-Mesh
+
+`apps/demo-datamesh` — Server Action ledger windows plus high-capacity client filter tools over heavy in-memory tables (hybrid data flow).
+
+Run: `pnpm dev:datamesh` → [http://localhost:3002](http://localhost:3002)
+
+See [apps/demo-datamesh/README.md](apps/demo-datamesh/README.md).

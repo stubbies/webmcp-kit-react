@@ -119,6 +119,46 @@ importers:
         specifier: ^0.1.10
         version: 0.1.10
 
+  apps/demo-datamesh:
+    dependencies:
+      '@webmcp-kit/next':
+        specifier: workspace:*
+        version: link:../../packages/next
+      '@webmcp-kit/react':
+        specifier: workspace:*
+        version: link:../../packages/core
+      next:
+        specifier: ^15.1.0
+        version: 15.5.28(@types/node@22.20.5)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      react:
+        specifier: ^19.0.0
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.3.1(react@19.3.1)
+      use-webmcp-tool:
+        specifier: ^0.3.0
+        version: 0.3.0(react@19.3.1)
+      zod:
+        specifier: ^3.24.1
+        version: 3.25.76
+    devDependencies:
+      '@types/node':
+        specifier: ^22.10.0
+        version: 22.20.5
+      '@types/react':
+        specifier: ^19.0.0
+        version: 19.3.0
+      '@types/react-dom':
+        specifier: ^19.0.0
+        version: 19.3.0(@types/react@19.3.0)
+      typescript:
+        specifier: ^5.7.2
+        version: 5.9.3
+      webmcp-types:
+        specifier: ^0.1.10
+        version: 0.1.10
+
   packages/core:
     dependencies:
       '@mcp-b/webmcp-polyfill':
@@ -161,6 +201,42 @@ importers:
       webmcp-types:
         specifier: ^0.1.10
         version: 0.1.10
+
+  packages/next:
+    devDependencies:
+      '@testing-library/react':
+        specifier: ^16.3.0
+        version: 16.3.3(@testing-library/dom@10.4.2)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@types/react':
+        specifier: ^19.0.0
+        version: 19.3.0
+      '@webmcp-kit/react':
+        specifier: workspace:*
+        version: link:../core
+      jsdom:
+        specifier: ^26.0.0
+        version: 26.1.0
+      react:
+        specifier: ^19.0.0
+        version: 19.3.1
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.3.1(react@19.3.1)
+      tsup:
+        specifier: ^8.3.5
+        version: 8.5.1(postcss@8.5.32)(typescript@5.9.3)
+      typescript:
+        specifier: ^5.7.2
+        version: 5.9.3
+      use-webmcp-tool:
+        specifier: ^0.3.0
+        version: 0.3.0(react@19.3.1)
+      vitest:
+        specifier: ^3.0.0
+        version: 3.2.7(@types/node@22.20.5)(jsdom@26.1.0)
+      zod:
+        specifier: ^3.24.1
+        version: 3.25.76
 
   packages/redux:
     devDependencies:
