@@ -1,0 +1,41 @@
+{
+  "name": "@webmcp-kit/zustand",
+  "version": "0.1.0",
+  "description": "Zustand store action adapters for WebMCP tools",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@webmcp-kit/react": "workspace:*",
+    "react": ">=18",
+    "zod": ">=3",
+    "zustand": ">=4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.0.0",
+    "@webmcp-kit/react": "workspace:*",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "use-webmcp-tool": "^0.3.0",
+    "vitest": "^3.0.0",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2",
+    "webmcp-types": "^0.1.10"
+  }
+}
