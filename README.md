@@ -85,7 +85,8 @@ Run: `pnpm dev` → [http://localhost:3000](http://localhost:3000)
 
 `apps/demo-concierge` — dynamic tool mounting across App Router routes (Redux/RTK Query + RHF search + intercepting booking modal).
 
-Run: `pnpm dev:concierge` → [http://localhost:3001](http://localhost:3001)
+- Live: [https://webmcp-kit-react-concierge-demo.vercel.app/](https://webmcp-kit-react-concierge-demo.vercel.app/)
+- Local: `pnpm dev:concierge` → [http://localhost:3001](http://localhost:3001)
 
 See [apps/demo-concierge/README.md](apps/demo-concierge/README.md).
 

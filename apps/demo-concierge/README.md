@@ -2,6 +2,8 @@
 
 Next.js App Router demo for **dynamic, contextual WebMCP tool mounting** — layout-stable trip tools, route-scoped search/list/detail tools, and modal-only tools via an intercepting parallel route.
 
+**Live demo:** [https://webmcp-kit-react-concierge-demo.vercel.app/](https://webmcp-kit-react-concierge-demo.vercel.app/)
+
 ## Run
 
 ```bash
@@ -40,6 +42,8 @@ Open [http://localhost:3001](http://localhost:3001). Enable WebMCP testing in Ch
 - `@react-webmcp-kit/core` — `McpProvider`, `McpDevTools`, polyfill
 
 ## Deploy (Vercel)
+
+Live: [https://webmcp-kit-react-concierge-demo.vercel.app/](https://webmcp-kit-react-concierge-demo.vercel.app/)
 
 1. Import this monorepo into Vercel.
 2. Set **Root Directory** to `apps/demo-concierge`.
